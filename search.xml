@@ -6,6 +6,80 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>stable diffusion的本地部署手把手教程</title>
+    <url>/2023/09/14/2023%E5%B9%B49%E6%9C%8814/</url>
+    <content><![CDATA[<p>教程包括：</p>
+<p>1.安装miniconda并利用miniconda单独为sd创建环境</p>
+<p>2.安装git</p>
+<p>3.安装CUDA</p>
+<p>4.在环境中克隆sd代码</p>
+<p>5.推荐几个模型下载网站和如何使用模型</p>
+<h3 id="注意：如果报错-推荐科学上网"><a href="#注意：如果报错-推荐科学上网" class="headerlink" title="注意：如果报错,推荐科学上网"></a>注意：如果报错,推荐科学上网</h3><hr>
+<p>一.安装miniconda</p>
+<p>miniconda官网<a href="https://docs.conda.io/projects/miniconda/en/latest/">miniconda</a></p>
+<p><a href="C:\Users\丿uep\Desktop\屏幕截图 2023-09-14 213440.png">操作图片</a></p>
+<p>安装改一下路径,其它一路next</p>
+<p>安装完成后在win搜索里搜minicond打开,输入</p>
+<blockquote>
+<p>conda -V</p>
+</blockquote>
+<p>如果弹出版本号那就没错。</p>
+<hr>
+<p>接下来为sd的部署创建环境：</p>
+<p>在minicond中输入以下指令,然后回车</p>
+<blockquote>
+<p>conda create —name stable python=3.10.6</p>
+</blockquote>
+<p>它会问你是否安装,输入y即可</p>
+<p><a href="C:\Users\丿uep\Pictures\Screenshots\屏幕截图 2023-09-14 215024.png">询问图片</a></p>
+<p>没报错就可以</p>
+<p>输入并执行下面语句，激活conda虚拟环境并更新pip</p>
+<blockquote>
+<p>conda activate stable</p>
+<p>python -m pip install —upgrade pip</p>
+<p>pip config set global.index-url <a href="https://mirrors.aliyun.com/pypi/simple/">https://mirrors.aliyun.com/pypi/simple/</a></p>
+</blockquote>
+<p>记得按回车</p>
+<hr>
+<p>二.安装git</p>
+<p>点击<a href="https://git-scm.com/download/win">git官网</a></p>
+<p>可以改一下安装位置,其它直接next</p>
+<hr>
+<p>三.安装CUDA</p>
+<p>首先查看自己电脑应该安装哪个版本</p>
+<p>在minicond输入</p>
+<blockquote>
+<p>nvidia-smi</p>
+</blockquote>
+<p>看CUDA Version 后面的版本号,在官网下载对应版本</p>
+<p><a href="https://developer.nvidia.com/cuda-toolkit-archive">NVIDIA cuda官网</a></p>
+<p>在安装时同样的,可以改变安装位置,其它无脑下一步</p>
+<hr>
+<p>接下来克隆sd的文件</p>
+<p>现在确定你的minicond界面为</p>
+<p><a href="C:\Users\丿uep\Desktop\屏幕截图 2023-09-14 232658.png">输入行的图片</a></p>
+<p>然后输入你想安装的盘</p>
+<blockquote>
+<p>E: 或者其它你想的盘</p>
+</blockquote>
+<p>再输入,克隆sd</p>
+<blockquote>
+<p>git clone <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui.git">https://github.com/AUTOMATIC1111/stable-diffusion-webui.git</a></p>
+</blockquote>
+<p>然后你就能在你选择的盘里看到文件夹stable-diffusion-webui</p>
+<p>在minicond里输入</p>
+<blockquote>
+<p>cd stable-diffusion-webui</p>
+</blockquote>
+<p>再执行下面指令打开应用程序</p>
+<blockquote>
+<p>stable-diffusion-webui</p>
+</blockquote>
+<h4 id="注意-这一步会下载很多依赖-请确保网络通畅-不行的话-请科学上网"><a href="#注意-这一步会下载很多依赖-请确保网络通畅-不行的话-请科学上网" class="headerlink" title="注意,这一步会下载很多依赖,请确保网络通畅,不行的话,请科学上网"></a>注意,这一步会下载很多依赖,请确保网络通畅,不行的话,请科学上网</h4><hr>
+<p>第一次编辑于2023/09/14,后续会完善</p>
+]]></content>
+  </entry>
+  <entry>
     <title>电影</title>
     <url>/movies/index.html</url>
     <content><![CDATA[]]></content>
