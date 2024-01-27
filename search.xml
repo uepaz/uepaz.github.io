@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2023年8月10日我开始写我的博客</title>
-    <url>/2023/08/10/First/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>stable diffusion的本地部署手把手教程</title>
     <url>/2024/01/09/2023%E5%B9%B49%E6%9C%8814/</url>
     <content><![CDATA[<p>教程包括：</p>
@@ -221,18 +216,13 @@
 ]]></content>
   </entry>
   <entry>
-    <title>tags</title>
-    <url>/tags/index.html</url>
+    <title>2023年8月10日我开始写我的博客</title>
+    <url>/2023/08/10/First/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>友链</title>
     <url>/link/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>音乐</title>
-    <url>/music/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -243,6 +233,16 @@
   <entry>
     <title>关于</title>
     <url>/about/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>音乐</title>
+    <url>/music/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>tags</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
