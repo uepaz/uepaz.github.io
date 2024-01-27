@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>2023年8月10日我开始写我的博客</title>
+    <url>/2023/08/10/First/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>stable diffusion的本地部署手把手教程</title>
+    <url>/2024/01/09/2023%E5%B9%B49%E6%9C%8814/</url>
+    <content><![CDATA[<p>教程包括：</p>
+<p>1.安装miniconda并利用miniconda单独为sd创建环境</p>
+<p>2.安装git</p>
+<p>3.安装CUDA</p>
+<p>4.在环境中克隆sd代码</p>
+<p>5.推荐几个模型下载网站和如何使用模型</p>
+<h3 id="注意：如果报错-推荐科学上网"><a href="#注意：如果报错-推荐科学上网" class="headerlink" title="注意：如果报错,推荐科学上网"></a>注意：如果报错,推荐科学上网</h3><hr>
+<p>一.安装miniconda</p>
+<p>miniconda官网<a href="https://docs.conda.io/projects/miniconda/en/latest/">miniconda</a></p>
+<p><img src="/2024/01/09/2023%E5%B9%B49%E6%9C%8814/下载minicond.png" style="zoom: 33%;"></p>
+<p>安装改一下路径,其它一路next</p>
+<p>安装完成后在win搜索里搜minicond打开,输入</p>
+<blockquote>
+<p>conda -V</p>
+</blockquote>
+<p>如果弹出版本号那就没错。</p>
+<hr>
+<p>接下来为sd的部署创建环境：</p>
+<p>在minicond中输入以下指令,然后回车</p>
+<blockquote>
+<p>conda create —name stable python=3.10.6</p>
+</blockquote>
+<p>它会问你是否安装,输入y即可</p>
+<p><img src="/2024/01/09/2023%E5%B9%B49%E6%9C%8814/询问的图片.png"></p>
+<p>没报错就可以</p>
+<p>输入并执行下面语句，激活conda虚拟环境并更新pip</p>
+<blockquote>
+<p>conda activate stable</p>
+<p>python -m pip install —upgrade pip</p>
+<p>pip config set global.index-url <a href="https://mirrors.aliyun.com/pypi/simple/">https://mirrors.aliyun.com/pypi/simple/</a></p>
+</blockquote>
+<p>记得按回车</p>
+<hr>
+<p>二.安装git</p>
+<p>点击<a href="https://git-scm.com/download/win">git官网</a></p>
+<p>可以改一下安装位置,其它直接next</p>
+<hr>
+<p>三.安装CUDA</p>
+<p>首先查看自己电脑应该安装哪个版本</p>
+<p>在minicond输入</p>
+<blockquote>
+<p>nvidia-smi</p>
+</blockquote>
+<p>看CUDA Version 后面的版本号,在官网下载对应版本</p>
+<p><a href="https://developer.nvidia.com/cuda-toolkit-archive">NVIDIA cuda官网</a></p>
+<p>在安装时同样的,可以改变安装位置,其它无脑下一步</p>
+<hr>
+<p>接下来克隆sd的文件</p>
+<p>现在确定你的minicond界面为</p>
+<p><img src="/2024/01/09/2023%E5%B9%B49%E6%9C%8814/输入行的图片.png" style="zoom:50%;"></p>
+<p>然后输入你想安装的盘</p>
+<blockquote>
+<p>E: 或者其它你想的盘</p>
+</blockquote>
+<p>再输入,克隆sd</p>
+<blockquote>
+<p>git clone <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui.git">https://github.com/AUTOMATIC1111/stable-diffusion-webui.git</a></p>
+</blockquote>
+<p>然后你就能在你选择的盘里看到文件夹stable-diffusion-webui</p>
+<p>在minicond里输入</p>
+<blockquote>
+<p>cd stable-diffusion-webui</p>
+</blockquote>
+<p>再执行下面指令打开应用程序</p>
+<blockquote>
+<p>stable-diffusion-webui</p>
+</blockquote>
+<h4 id="注意-这一步会下载很多依赖-请确保网络通畅-不行的话-请科学上网"><a href="#注意-这一步会下载很多依赖-请确保网络通畅-不行的话-请科学上网" class="headerlink" title="注意,这一步会下载很多依赖,请确保网络通畅,不行的话,请科学上网"></a>注意,这一步会下载很多依赖,请确保网络通畅,不行的话,请科学上网</h4><hr>
+<p>第一次编辑于2023/09/14,后续会完善</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>计算机二级考试环境手把手教程（虚拟机-win7+office 2016+visual studio 2010）</title>
+    <url>/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/</url>
+    <content><![CDATA[<hr>
+<h2 id="本文是计算机考试环境本地部署的教程"><a href="#本文是计算机考试环境本地部署的教程" class="headerlink" title="本文是计算机考试环境本地部署的教程"></a>本文是计算机考试环境本地部署的教程</h2><hr>
+<h2 id="一-安装windows-7虚拟机"><a href="#一-安装windows-7虚拟机" class="headerlink" title="一.安装windows 7虚拟机"></a>一.安装windows 7虚拟机</h2><p>下载<a href="https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html">VMware</a>和<a href="https://cloud.189.cn/t/jIV7nqy2A3qe （访问码：2kd1）">Windows 7镜像</a>（包含补丁）</p>
+<blockquote>
+<p>VMware </p>
+<p><a href="https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html">https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html</a></p>
+<p>Windows 7镜像和<a href="https://update7.simplix.info/UpdatePack7R2-24.1.10.exe">补丁</a></p>
+<p>可以我分享的：</p>
+<p>天翼云盘：<a href="https://cloud.189.cn/t/jIV7nqy2A3qe">https://cloud.189.cn/t/jIV7nqy2A3qe</a> （访问码：2kd1）</p>
+<p>123云盘：<a href="https://www.123pan.com/s/BmILVv-deGp3.html（提取码:dGPK）">https://www.123pan.com/s/BmILVv-deGp3.html（提取码:dGPK）</a></p>
+<p>也可以去<a href="https://msdn.itellyou.cn/">MSDN官网</a>里下载：<a href="https://msdn.itellyou.cn/">https://msdn.itellyou.cn/</a></p>
+<p>补丁：<a href="https://update7.simplix.info/UpdatePack7R2-24.1.10.exe">https://update7.simplix.info/UpdatePack7R2-24.1.10.exe</a></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/PixPin_2024-01-24_21-37-09.png" style="zoom:25%;"></p>
+</blockquote>
+<h3 id="1-安装VMware"><a href="#1-安装VMware" class="headerlink" title="1.安装VMware"></a>1.安装VMware</h3><p>按照以下安装，更改安装位置（不推荐安装在c盘）其它无脑下一步</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/屏幕截图 2024-01-24 201850.png" style="zoom: 25%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/屏幕截图 2024-01-24 201706.png" style="zoom: 25%;"></p>
+<p>首次进入需要激活，有两种方法</p>
+<p>（1）购买正版（有钱的推荐支持正版）</p>
+<p>（2）使用<a href="https://cn.bing.com/search?q=vmware17%E6%9C%80%E6%96%B0%E5%AF%86%E9%92%A5%20%E6%B0%B8%E4%B9%85">网上公开激活码</a>，直接百度可得</p>
+<p>1‘.选择<strong>创建新的虚拟机</strong></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/屏幕截图 2024-01-24 203531.png" style="zoom: 33%;"></p>
+<p>2‘.然后选择<strong>自定义</strong></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/自定义.png" style="zoom: 50%;"></p>
+<p>3‘.<strong>兼容性</strong>直接默认。下一步。</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/计算机硬件兼容性.png" style="zoom:50%;"></p>
+<p>4‘.<strong>选择稍后安装操作系统</strong>，点击下一步。</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/稍后安装操作系统.png" style="zoom:50%;"></p>
+<p>5‘.选择<strong>Microsoft Windows</strong>然后<strong>Windows 7</strong>，下一步。</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/选择客户机操作系统.png" style="zoom:50%;"></p>
+<p>6‘.<strong>名称</strong>和<strong>安装位置</strong>自己设置，不推荐安装在c盘</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/命名虚拟机.png" style="zoom:50%;"></p>
+<p>7‘.处理器配置根据自己的配置来，不会的就照我的来。</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/处理器配置.png" style="zoom:50%;"></p>
+<p>8‘.设置虚拟机内存，也根据自己的配置来，不会的就按照我的来。</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/设置虚拟机内存.png" style="zoom:50%;"></p>
+<p>9‘.网络类型默认就好，直接下一步。</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/网络类型.png" style="zoom:50%;"></p>
+<p>10‘.控制器类型也是默认，直接下一步。</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/控制器类型.png" style="zoom:50%;"></p>
+<p>11‘.磁盘类型也默认，下一步。</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/磁盘类型.png" style="zoom:50%;"></p>
+<p>12‘.选择磁盘也默认，下一步。</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/选择磁盘.png" style="zoom:50%;"></p>
+<p>13‘.指定磁盘容量，最好不少于40gb，默认60就很好。</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/指定磁盘容量.png" style="zoom:50%;"></p>
+<p>14‘.指定磁盘文件直接下一步。</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/指定磁盘文件.png" style="zoom:50%;"></p>
+<p>15‘.虚拟机设置暂时不用管，直接完成。</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/虚拟机设置.png" style="zoom:50%;"></p>
+<p>16‘.然后我们点击编辑虚拟机配置，并按照下图更改。</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/编辑虚拟机设置.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/CD_DVD.png" style="zoom:50%;"></p>
+<p>选择Windows 7镜像位置</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/选择镜像位置.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/开启虚拟机.png" style="zoom:50%;"></p>
+<p>17‘.按照图片安装。</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/安装1下一步.png"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/安装2现在安装.png" alt></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/安装3接受许可.png" alt></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/安装4自定义安装.png" alt></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/安装5安装位置.png" alt></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/安装6填入用户名.png" alt></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/安装7密码直接下一步.png" alt></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/安装8使用推荐设置.png" alt></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/安装9时区选择.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/安装10选择计算机当前位置.png" style="zoom:50%;"></p>
+<hr>
+<h2 id="二-更新Windows-7并安装VMware-Tools"><a href="#二-更新Windows-7并安装VMware-Tools" class="headerlink" title="二.更新Windows 7并安装VMware Tools"></a><strong>二.更新Windows 7并安装VMware Tools</strong></h2><h3 id="1-将外部电脑下载的系统更新包共享给虚拟机"><a href="#1-将外部电脑下载的系统更新包共享给虚拟机" class="headerlink" title="1.将外部电脑下载的系统更新包共享给虚拟机"></a>1.将<strong>外部电脑</strong>下载的系统更新包共享给虚拟机</h3><p>（1）找到下载的系统补丁程序</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/1Windows7更新包.png" alt>（2） 将<strong>所在文件夹</strong>共享</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/3打开主系统文件共享给虚拟机.png" style="zoom: 50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/3打开主系统文件共享给虚拟机2.png" style="zoom: 50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/3打开主系统文件共享给虚拟机3.png" style="zoom: 50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/4选择用户.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/4添加用户2.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/4共享3.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/4完成共享4.png" style="zoom:50%;"></p>
+<h3 id="2-在虚拟机中打开并更新完补丁（必须打完补丁才能安装VMware-Tools）"><a href="#2-在虚拟机中打开并更新完补丁（必须打完补丁才能安装VMware-Tools）" class="headerlink" title="2.在虚拟机中打开并更新完补丁（必须打完补丁才能安装VMware Tools）"></a>2.在<strong>虚拟机中</strong>打开并更新完补丁（必须打完补丁才能安装VMware Tools）</h3><p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/5虚拟机打开文件.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/5打开共享文件夹2.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/5将补丁拖至桌面3.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/5双击打开补丁程序4.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/5安装补丁5.png" style="zoom:50%;"></p>
+<p>最后按照它的指示等待自动更新完毕（中途会要求你重启，重启之后有可能会让你选择，正常启动即可）</p>
+<h3 id="3-安装VMware-Tools"><a href="#3-安装VMware-Tools" class="headerlink" title="3.安装VMware Tools"></a>3.安装VMware Tools</h3><p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/6安装VMware.png" style="zoom:50%;"></p>
+<p>等待一会，会提示安装</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/6运行安装程序2.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/6运行安装程序3.png" style="zoom:50%;"></p>
+<p>等待一会，然后一直下一步就可以。</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/6提示重启4.png" style="zoom:50%;"></p>
+<hr>
+<h2 id="三-虚拟机安装office-2016-并激活（只考MS的往下看，考c程序设计的看第四部分）"><a href="#三-虚拟机安装office-2016-并激活（只考MS的往下看，考c程序设计的看第四部分）" class="headerlink" title="三.虚拟机安装office 2016 并激活（只考MS的往下看，考c程序设计的看第四部分）"></a>三.虚拟机安装office 2016 并激活（只考MS的往下看，考c程序设计的看第四部分）</h2><h3 id="1-首先下载office-tool（版本有要求，我这里是下载v8-2-8-2然后内部更新）"><a href="#1-首先下载office-tool（版本有要求，我这里是下载v8-2-8-2然后内部更新）" class="headerlink" title="1.首先下载office_tool（版本有要求，我这里是下载v8.2.8.2然后内部更新）"></a>1.首先下载office_tool（版本有要求，我这里是下载v8.2.8.2然后内部更新）</h3><blockquote>
+<p>office_tool :</p>
+<p>Gihub：<a href="https://github.com/YerongAI/Office-Tool/releases/tag/8.2.8.2">https://github.com/YerongAI/Office-Tool/releases/tag/8.2.8.2</a></p>
+<p>123云盘：<a href="https://www.123pan.com/s/BmILVv-TeGp3.html（提取码:CKfL）">https://www.123pan.com/s/BmILVv-TeGp3.html（提取码:CKfL）</a></p>
+<p>天翼云盘：<a href="https://cloud.189.cn/t/ZJnYzueyQfYr">https://cloud.189.cn/t/ZJnYzueyQfYr</a> （访问码：2ez6）</p>
+</blockquote>
+<h3 id="2-下载-NET"><a href="#2-下载-NET" class="headerlink" title="2.下载.NET"></a>2.下载.NET</h3><blockquote>
+<p>官网：</p>
+<p>dotnet-sdk-5.0.408-win-x86 : <a href="https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-5.0.17-windows-x86-installer?cid=getdotnetcore">https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-5.0.17-windows-x86-installer?cid=getdotnetcore</a></p>
+<p>windowsdesktop-runtime-6.0.26-win-x86 : <a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.26-windows-x86-installer">https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.26-windows-x86-installer</a></p>
+</blockquote>
+<p>将office_tool和.NET文件加入共享的文件夹传给虚拟机</p>
+<h3 id="3-先安装-NET"><a href="#3-先安装-NET" class="headerlink" title="3.先安装.NET"></a>3.先安装.NET</h3><p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/8安装.NET5.0.png" style="zoom:50%;"></p>
+<p>然后关闭安装下一个</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/8安装windowsdesktop-runtime-6.0.26-win-x86.png" style="zoom:50%;"></p>
+<h3 id="4-使用office-tool下载office-2016"><a href="#4-使用office-tool下载office-2016" class="headerlink" title="4.使用office_tool下载office_2016"></a>4.使用office_tool下载office_2016</h3><p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/9打开office_tool.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/9同意许可.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/9更新.png" style="zoom:50%;"></p>
+<p>更新不了也没关系，点击部署</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/10部署office1.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/10下载office.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/10开始部署.png" style="zoom:50%;"></p>
+<p>最后等待自动部署完毕</p>
+<h3 id="5-激活office-2016"><a href="#5-激活office-2016" class="headerlink" title="5.激活office 2016"></a>5.激活office 2016</h3><blockquote>
+<p>可以按照office_tool官方技术文档激活</p>
+<p><a href="https://www.coolhub.top/archives/14">https://www.coolhub.top/archives/14</a></p>
+</blockquote>
+<p>在链接找到以下标题进行操作</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/11官方激活文档.png" style="zoom:33%;"></p>
+<hr>
+<h2 id="四-安装visual-studio-2010（c程序设计内容）"><a href="#四-安装visual-studio-2010（c程序设计内容）" class="headerlink" title="四.安装visual studio 2010（c程序设计内容）"></a><strong>四.安装visual studio 2010</strong>（c程序设计内容）</h2><h3 id="1-下载安装包"><a href="#1-下载安装包" class="headerlink" title="1.下载安装包"></a>1.下载安装包</h3><blockquote>
+<p>123云盘：<a href="https://www.123pan.com/s/BmILVv-QeGp3.html（提取码:4Mrb）">https://www.123pan.com/s/BmILVv-QeGp3.html（提取码:4Mrb）</a></p>
+<p>天翼云盘：<a href="https://cloud.189.cn/t/Fv2aaqiM3umm">https://cloud.189.cn/t/Fv2aaqiM3umm</a> （访问码：9wg1）</p>
+</blockquote>
+<h3 id="2-共享到虚拟机"><a href="#2-共享到虚拟机" class="headerlink" title="2.共享到虚拟机"></a>2.共享到虚拟机</h3><p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/12共享程序.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/12解压.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/12提取.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/12安装.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/13安装1.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/13安装2.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/13安装3.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/13更改位置按转4.png" style="zoom:50%;"></p>
+<p>等待自动安装完成</p>
+<p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/打开.png" style="zoom:50%;"></p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>教程在这里就结束了</p>
+<p>visual studio 2010使用还是会有许多问题，百度都有解，我可能后续会更新但也可能不会</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>tags</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>友链</title>
+    <url>/link/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>音乐</title>
+    <url>/music/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>电影</title>
+    <url>/movies/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>关于</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+</search>
