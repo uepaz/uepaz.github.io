@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>stable diffusion的本地部署手把手教程</title>
-    <url>/2024/01/09/2023%E5%B9%B49%E6%9C%8814/</url>
+    <url>/2023/09/15/2023%E5%B9%B49%E6%9C%8814/</url>
     <content><![CDATA[<p>教程包括：</p>
 <p>1.安装miniconda并利用miniconda单独为sd创建环境</p>
 <p>2.安装git</p>
@@ -12,7 +12,7 @@
 <h3 id="注意：如果报错-推荐科学上网"><a href="#注意：如果报错-推荐科学上网" class="headerlink" title="注意：如果报错,推荐科学上网"></a>注意：如果报错,推荐科学上网</h3><hr>
 <p>一.安装miniconda</p>
 <p>miniconda官网<a href="https://docs.conda.io/projects/miniconda/en/latest/">miniconda</a></p>
-<p><img src="/2024/01/09/2023%E5%B9%B49%E6%9C%8814/下载minicond.png" style="zoom: 33%;"></p>
+<p><img src="/2023/09/15/2023%E5%B9%B49%E6%9C%8814/下载minicond.png" style="zoom: 33%;"></p>
 <p>安装改一下路径,其它一路next</p>
 <p>安装完成后在win搜索里搜minicond打开,输入</p>
 <blockquote>
@@ -26,7 +26,7 @@
 <p>conda create —name stable python=3.10.6</p>
 </blockquote>
 <p>它会问你是否安装,输入y即可</p>
-<p><img src="/2024/01/09/2023%E5%B9%B49%E6%9C%8814/询问的图片.png"></p>
+<p><img src="/2023/09/15/2023%E5%B9%B49%E6%9C%8814/询问的图片.png"></p>
 <p>没报错就可以</p>
 <p>输入并执行下面语句，激活conda虚拟环境并更新pip</p>
 <blockquote>
@@ -52,7 +52,7 @@
 <hr>
 <p>接下来克隆sd的文件</p>
 <p>现在确定你的minicond界面为</p>
-<p><img src="/2024/01/09/2023%E5%B9%B49%E6%9C%8814/输入行的图片.png" style="zoom:50%;"></p>
+<p><img src="/2023/09/15/2023%E5%B9%B49%E6%9C%8814/输入行的图片.png" style="zoom:50%;"></p>
 <p>然后输入你想安装的盘</p>
 <blockquote>
 <p>E: 或者其它你想的盘</p>
@@ -218,6 +218,28 @@
 <p><img src="/2024/01/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83/打开.png" style="zoom:50%;"></p>
 <h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>教程在这里就结束了</p>
 <p>visual studio 2010使用还是会有许多问题，百度都有解，我可能后续会更新但也可能不会</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>群晖U盘引导更换U盘</title>
+    <url>/2024/01/26/%E7%BE%A4%E6%99%96%E5%85%8B%E9%9A%86%E5%BC%95%E5%AF%BC%E7%9B%98/</url>
+    <content><![CDATA[<h4 id="请按照步骤一步一步来，操作有风险，操作需谨慎"><a href="#请按照步骤一步一步来，操作有风险，操作需谨慎" class="headerlink" title="请按照步骤一步一步来，操作有风险，操作需谨慎"></a>请按照步骤一步一步来，<strong>操作有风险，操作需谨慎</strong></h4><hr>
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录:"></a>目录:</h4><p>一.为新U盘刷入镜像</p>
+<p>二.使用<a href="https://www.diskgenius.cn/download.php">DiskGenius</a>工具将原本U盘中的引导数据克隆到新U盘</p>
+<p>准备工作：</p>
+<ul>
+<li>[ ] 1.下载好你群晖的引导镜像（我这里使用的是<a href="https://rrorg.cn/">RRORG</a>）</li>
+<li>[ ] 2.准备启动盘工具（我这里是<a href="https://rufus.ie/zh/">rufus</a>）</li>
+<li>[ ] 3.下载磁盘管理工具<a href="https://www.diskgenius.cn/download.php">DiskGenius</a></li>
+<li>[ ] </li>
+</ul>
+<h5 id="一-为新U盘刷入镜像"><a href="#一-为新U盘刷入镜像" class="headerlink" title="一.为新U盘刷入镜像"></a>一.为新U盘刷入镜像</h5><p><img src="/2024/01/26/%E7%BE%A4%E6%99%96%E5%85%8B%E9%9A%86%E5%BC%95%E5%AF%BC%E7%9B%98/image/群晖更换引导盘/PixPin_2024-06-08_22-45-09.png" style="zoom: 50%;"></p>
+<p>1.选择你新的U盘</p>
+<p>2.引导类型选择镜像文件</p>
+<p>3.选择你群晖的引导镜像</p>
+<p>4.开始刷入镜像</p>
+<h5 id="二-使用磁盘管理工具DiskGenius来克隆镜像"><a href="#二-使用磁盘管理工具DiskGenius来克隆镜像" class="headerlink" title="二.使用磁盘管理工具DiskGenius来克隆镜像"></a>二.使用磁盘管理工具<a href="https://www.diskgenius.cn/download.php">DiskGenius</a>来克隆镜像</h5><p><img src="/2024/01/26/%E7%BE%A4%E6%99%96%E5%85%8B%E9%9A%86%E5%BC%95%E5%AF%BC%E7%9B%98/image/群晖更换引导盘/PixPin_2024-06-08_22-51-30.png" style="zoom:50%;"></p>
+<p><img src="/2024/01/26/%E7%BE%A4%E6%99%96%E5%85%8B%E9%9A%86%E5%BC%95%E5%AF%BC%E7%9B%98/image/群晖更换引导盘/PixPin_2024-06-08_22-53-19.png" style="zoom:50%;"></p>
 ]]></content>
   </entry>
   <entry>
